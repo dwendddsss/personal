@@ -1,0 +1,15 @@
+.text-type {
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.text-type__cursor {
+  display: inline-block;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.text-type__cursor--hidden {
+  opacity: 0;
+}
