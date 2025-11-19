@@ -144,18 +144,18 @@ const TextType = ({
     hideCursorWhileTyping && (currentCharIndex < textArray[currentTextIndex].length || isDeleting);
 
   return createElement(Component, {
-    ref: containerRef,
-    className: `text-type ${className}`,
-    ...props
-  }, <span className="text-type__content" style={{ color: getCurrentTextColor() }}>
-    {displayedText}
-  </span>, showCursor && (
-    <span
-      ref={cursorRef}
-      className={`text-type__cursor ${cursorClassName} ${shouldHideCursor ? 'text-type__cursor--hidden' : ''}`}>
-      {cursorCharacter}
-    </span>
-  ));
+  ref: containerRef,
+  className: `text-type ${className}`,
+  ...props
+}, <span className="text-type__content">
+     {displayedText}
+    </span>, showCursor && (
+  <span
+    ref={cursorRef}
+    className={`text-type__cursor ${cursorClassName} ${shouldHideCursor ? 'text-type__cursor--hidden' : ''}`}>
+    {cursorCharacter}
+  </span>
+));
 };
 
 export default TextType;
