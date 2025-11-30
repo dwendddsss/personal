@@ -26,7 +26,7 @@ export default function Achievements() {
               web development track with Markoding & Ministry of Education.
             </p>
             <p>
-              Currently learning modern web technologies such as HTML, CSS, JavaScript, React, and Next.js.
+              Currently learning modern web technologies such as HTML, CSS, JavaScript, React, and Express.js.
             </p>
           </AccordionContent>
         </AccordionItem>
